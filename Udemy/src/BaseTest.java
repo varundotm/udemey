@@ -12,7 +12,6 @@ public class BaseTest extends Base {
 		
 		AppiumDriver<MobileElement> driver = capability();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
 		driver.findElementByXPath("//android.widget.TextView[@content-desc=\"Preference\"]").click();
 
 	}
