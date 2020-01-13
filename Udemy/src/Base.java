@@ -22,6 +22,7 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.APP, appPath.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
+		
 //		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		AppiumDriver<MobileElement> driver = new AppiumDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		return driver;
